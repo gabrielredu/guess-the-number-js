@@ -1,0 +1,120 @@
+body, main, div, h1, p, label, input, button {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    height: 100vh;
+}
+
+.content {
+    background-color: rgb(105, 11, 11);
+    border-radius: 8px;
+    padding: 32px;
+    width: 500px;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 48px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    left: 39%;
+    top: 155%;
+    width: 96px;
+    height: 4px;
+}
+
+.subtitle {
+    color: #fff;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.inputs {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.input-label {
+    color: rgb(105, 11, 11);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.input-game {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-nmb {
+    border: 1px solid rgb(105, 11, 11);
+    border-radius: 4px 0px 0px 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+    width: 100%;
+}
+
+.btn {
+    background-color: rgb(105, 11, 11);
+    border-radius: 0px 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    transition: all 100ms linear;
+}
+
+.btn:hover {
+    background-color: rgba(105, 11, 11, .9);
+}
+
+.win {
+    background-color: salmon;
+    border-radius: 8px;
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 32px;
+}
+
+.results {
+    margin-top: 8px;
+}
+
+.retry {
+    background-color: #fff;
+    border-radius: 4px;
+    color: salmon;
+    cursor: pointer;
+    margin-left: 16px;
+    padding: 8px;
+}
+
+.turn {
+    padding-bottom: 8px;
+}
